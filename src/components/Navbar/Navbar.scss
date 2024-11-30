@@ -63,7 +63,11 @@
                 color: darkolivegreen;
             }
         }
-      
+        &:hover {
+            div{
+                background: darkolivegreen;
+            }
+        }
         
     }
 
@@ -87,7 +91,7 @@
     svg {
         width: 70%;
         height: 70%;
-        color: gray;
+        color: white;
     }
     div {
         position: fixed;
@@ -103,7 +107,8 @@
         justify-content: flex-end;
         align-items: flex-end;
         flex-direction: column;
-
+        
+        background: rgb(219, 240, 249);
         background-size: cover;
         background-repeat: repeat;
 
@@ -113,7 +118,7 @@
                 width: 35px;
                 height: 35px;
                 color: gray;
-                margin: 0.5rem 1rem;
+                margin: 2rem 0.9rem;
             }
             
             ul{

@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import {HiMenuAlt4, HiX} from 'react-icons/hi';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { motion } from "framer-motion";
 
-import logo4 from '../../assets/logo4.png';
-import './Navbar.scss';
-
+import logo4 from "../../assets/logo4.png";
+import "./Navbar.scss";
 
 const Navbar = () => {
-    const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={logo4} alt="" />
+        <img src={logo4} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["Home", "About Me", "Work", "Skills", "Contact"].map((item) => (
+        {["home", "about", "work", "skills", "contact"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -32,9 +32,8 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {["home", "about me", "work", "skills", "contact"].map((item) => (
+              {["home", "about", "work", "skills", "contact"].map((item) => (
                 <li key={item}>
-                  <div />
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}
                   </a>
@@ -46,6 +45,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
